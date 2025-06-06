@@ -1,0 +1,215 @@
+@font-face {
+    font-family: "quicksand";
+    src: url("fonts/Quicksand-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "quicksand-semibold";
+    src: url("fonts/static/Quicksand-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "quicksand-medium";
+    src: url("fonts/static/Quicksand-Medium.ttf") format("truetype");
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "quicksand";
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url("header\ pattern\ svg.svg");
+    border-bottom: 2px #31B9E4 solid;
+    padding-left: 10px;
+    position: fixed;
+    width: 100vw;
+    /* top: 0; */
+    z-index: 2;
+    background-color: black;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #EEEEEE;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.login-box{
+    background-color: white;
+    width: 500px;
+    /* height: 50vh; */
+    /* box-shadow: ; */
+    padding: 20px;
+    border-top: 3px #31B9E4 solid;
+}
+
+.login-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* font-weight: ; */
+    font-size: 20px;
+    font-family: "quicksand-medium";
+}
+
+.login-title>img{
+    position: absolute;
+    left: 0;
+}
+
+form{
+    /* background-color: aqua; */
+    margin-top: 20px;
+}
+.school-radio{
+    display: flex;
+    gap: 50px;
+}
+.school-radio-btn{
+    display: flex;
+    gap: 10px;
+}
+.school-radio-btn input[type="radio"]{
+    accent-color: green;
+    height: 20px;
+    width: 20px;
+}
+
+.dropdown select{
+     border: none;
+     appearance: none;
+     border-bottom: 1px solid gray;
+     width: 100%;
+     font-family: 'quicksand-medium';
+     font-size: 16px;
+     margin-top: 5px;
+     /* margin-bottom: 10px; */
+     background-image: url('icons/arrow-down.svg');
+     background-repeat: no-repeat;
+     background-position: right ;
+
+}
+
+form>div{
+    margin-bottom: 20px;
+}
+
+.dropdown label{
+    font-size: 12px;
+    color: gray;
+}
+
+.username > input{
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    font-size: 16px;
+}
+
+.username  a{
+    /* background: none; */
+    border: none;
+    color: #1F7A54;
+    /* position: absolute; */
+}
+
+.password a{
+    color: #1F7A54;
+}
+
+.username{
+    width: 100%;
+    text-align: right;
+}
+
+/* .password > input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 16px;
+}
+.password{
+    text-align: right;
+} */
+
+.username, .password{
+    margin-top: 50px;
+}
+
+.password-wrapper{
+    width: 100%;
+    background-color: azure;
+    position: relative;
+}
+
+.password-wrapper input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 16px;
+    padding-right :40px;
+}
+
+
+
+.preview-icon{
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+}
+
+.forgot-password-wrapper{
+    width: 100%;
+    text-align: right;
+}
+
+.rememberme input[type="checkbox"]{
+    accent-color: green;
+    width: 15px;
+    height: 15px;
+}
+
+.submit-btn{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.submit-btn button{
+    width: 200px;
+    height: 40px;
+    background-color: #3FD28B;
+    border: none;
+}
+
+.seperator{
+    width: 1px;
+    border: 1px gainsboro solid;
+    height: 18px;
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #1F7A54;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 12px;
+    padding: 5px;
+    background-color: #E0E1E1;
+}
