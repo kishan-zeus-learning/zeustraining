@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'roboto-regular';
+    src: url(fonts/Roboto-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'roboto-bold';
+    src: url(fonts/Roboto-Bold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'robot-medium';
+    src: url(fonts/Roboto-Medium.woff2) format("woff2");
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,15 +23,19 @@ body{
     align-items: center;
     width: 100vw;
     height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'roboto-regular';
+    /* background-color: red; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    background-color: beige;
 }
 
 .card{
     display: flex;
     gap: 15px;
-    border: 2px black solid;
-    padding: 5px;
+    /* border: 1px black solid; */
+    margin: 4px;
     justify-content: center;
+    background-color: white;
     align-items: center;
 }
 .card-content{
@@ -30,12 +49,13 @@ body{
 }
 
 .card-image img{
-    width: 150px;
+    width: 130px;
 }
 
 p.user-name{
     /* font-size: 18px; */
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-family: 'roboto-bold';
     margin-top: 30px;
 
 }
@@ -47,7 +67,7 @@ p.user-comment{
     height: 100%;
 } */
 .user-engagement img{
-    width: 30px;
+    width: 20px;
 }
 
 p.user-engagement{
@@ -55,8 +75,9 @@ p.user-engagement{
     justify-content: center;
     align-items: center;
     gap: 10px;  
-    
+    font-family: 'roboto-medium';
     margin-top: 30px;
+    color: gray;
 }
 
 .user-engagement span{
