@@ -44,7 +44,7 @@ main{
 
 .login-box{
     background-color: white;
-    width: 500px;
+    width: 488px;
     /* height: 50vh; */
     /* box-shadow: ; */
     padding: 20px;
@@ -87,7 +87,7 @@ form{
 .dropdown select{
      border: none;
      appearance: none;
-     border-bottom: 1px solid gray;
+     border-bottom: 1px solid #E7E7E7;
      width: 100%;
      font-family: 'quicksand-medium';
      font-size: 16px;
@@ -96,6 +96,7 @@ form{
      background-image: url('icons/arrow-down.svg');
      background-repeat: no-repeat;
      background-position: right ;
+     padding-bottom: 5px;
 
 }
 
@@ -110,7 +111,8 @@ form>div{
 
 .username > input{
     border: none;
-    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #E7E7E7;
     width: 100%;
     font-size: 16px;
 }
@@ -130,6 +132,7 @@ form>div{
     width: 100%;
     text-align: right;
 }
+
 
 /* .password > input{
     width: 100%;
@@ -154,9 +157,11 @@ form>div{
 .password-wrapper input{
     width: 100%;
     border: none;
-    border-bottom: 1px solid gray;
+    /* border-bottom: 1px solid gray; */
     font-size: 16px;
     padding-right :40px;
+        padding-bottom: 5px;
+    border-bottom: 1px solid #E7E7E7;
 }
 
 
@@ -172,6 +177,13 @@ form>div{
     text-align: right;
 }
 
+.rememberme{
+    font-size: 16px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap:3px;
+}
 .rememberme input[type="checkbox"]{
     accent-color: green;
     width: 15px;

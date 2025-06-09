@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <img src="icons/logo used in header.svg" alt="">
+        <div class="header-nav">
+            <div class="nav-option hide">DASHBOARD</div>
+            <div class="nav-option hide">CONTENT</div>
+            <div class="nav-option hide">USERS</div>
+            <div class="nav-option hide">REPORTS</div>
+            <div class="nav-option hide">ADMIN</div>
+            <div class="alerts"><img src="icons/alerts.svg" alt="alerts"> <span>2</span></div>
+            <div class="announcements"><img src="icons/announcements.svg" alt="announcements"><span>1</span></div>
+            <div class="account"><img src="icons/account_circle.svg" alt="account"><span>T</span></div>
+            <div class="nav-btn"><img src="icons/hamburger-menu.svg" alt=""></div>
+        </div>
+    </header>
+
+
+    <aside class="sidebar">
+        <div class="nav-item">DASHBOARD</div>
+        <div class="nav-item">CONTENT</div>
+        <div class="nav-item">USERS</div>
+        <div class="nav-item">REPORTS</div>
+        <div class="nav-item">ADMIN</div>
+        
+    </aside>
+
+    <main>
+        <div class="overview">
+            <div class="courses"><img src="icons/courses.svg" alt="courses"> <span class="num">4</span> <span>Courses</span></div>
+            <div class="classes"><img src="icons/classes.svg" alt="classes"> <span class="num">4</span> <span>Classes</span></div>
+        </div>
+
+        <div class="results">
+            <div class="showing-result">
+                <span class="small-mid-font">Showing 4 of 4 courses </span>
+            </div>
+            <div class="sort-result">
+                <span class="small-mid-font">Sort By:</span>
+                <select name="sortby" id="sortby">
+                    <option value="Course Name">Course Name</option>
+                </select>
+                <span class="back-btn"><img src="icons/sort.svg" alt="sort"></span>
+            </div>
+        </div>
+        <div class="articles-wrapper">
+
+       
+        <div class="articles">
+            <div class="card">
+                <div class="star"><img src="icons/favourite.svg" alt="favicon"></div>
+                <!-- <div class="expired">EXPIRED</div> -->
+
+
+                <div class="card-main">
+                    <div class="card-img">
+                        <img src="images/imageMask-1.svg" alt="">
+                    </div>
+                    <div class="card-details">
+                        <p class="card-title">Accelerations</p>
+                        <div class="card-detail1 small-mid-font">
+                            <div class="subject">Physics</div> <div class="seperator"></div> <div class="grade">Grade 7 <span class="grade-green">+2</span></div> 
+                        </div>
+                        <div class="card-detail2 small-mid-font">
+                            <div class="units"><span>4</span> Units </div>
+                            <div class="lessons"> <span>18</span> Lessons </div>
+                            <div class="topics"><span>24</span> Topics</div>
+                        </div>
+                        <div class="select-class">
+                            <select name="select-class" id="select-class">
+                                <option value="Mr Frank's Class B">Mr Frank's Class B</option>
+                            </select>
+                        </div>
+                        <div class="card-detail1 small-mid-font">
+                            <div>50 Students</div> <div class="seperator"></div> <div>21-Jan-2020 - 21-Aug-2020</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-options">
+                    <div class="views"><img src="icons/preview.svg" alt="preview"></div>
+                    <div class="calendar "><img src="icons/manage course.svg" alt="calendar"></div>
+                    <div class="grade-icon "><img src="icons/grade submissions.svg" alt="grade submissions"></div>
+                    <div class="reports"><img src="icons/reports.svg" alt="reports"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="star"><img src="icons/favourite.svg" alt="favicon"></div>
+                <!-- <div class="expired">EXPIRED</div> -->
+
+
+                <div class="card-main">
+                    <div class="card-img">
+                        <img src="images/imageMask-2.svg" alt="">
+                    </div>
+                    <div class="card-details">
+                        <p class="card-title">Displacement, Velocity and Speed</p>
+                        <div class="card-detail1 small-mid-font">
+                            <div class="subject">Physics 2</div> <div class="seperator"></div> <div class="grade">Grade 6 <span class="grade-green">+3</span></div> 
+                        </div>
+                        <div class="card-detail2 small-mid-font">
+                            <div class="units"><span>2</span> Units </div>
+                            <div class="lessons"> <span>15</span> Lessons </div>
+                            <div class="topics"><span>20</span> Topics</div>
+                        </div>
+                        <div class="select-class">
+                            <select name="select-class" id="select-class">
+                                <option value="" disabled selected>No Classes</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-options">
+                    <div class="views"><img src="icons/preview.svg" alt="preview"></div>
+                    <div class="calendar opacity-40"><img src="icons/manage course.svg" alt="calendar"></div>
+                    <div class="grade-icon opacity-40"><img src="icons/grade submissions.svg" alt="grade submissions"></div>
+                    <div class="reports"><img src="icons/reports.svg" alt="reports"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="star"><img src="icons/favourite.svg" alt="favicon"></div>
+                <!-- <div class="expired">EXPIRED</div> -->
+
+
+                <div class="card-main">
+                    <div class="card-img">
+                        <img src="images/imageMask.svg" alt="">
+                    </div>
+                    <div class="card-details">
+                        <p class="card-title">Introduction to Biology: Micro organisms and how they affec...</p>
+                        <div class="card-detail1 small-mid-font">
+                            <div class="subject">Biology</div> <div class="seperator"></div> <div class="grade">Grade 4 <span class="grade-green">+1</span></div> 
+                        </div>
+                        <div class="card-detail2 small-mid-font">
+                            <div class="units"><span>5</span> Units </div>
+                            <div class="lessons"> <span>16</span> Lessons </div>
+                            <div class="topics"><span>22</span> Topics</div>
+                        </div>
+                        <div class="select-class">
+                            <select name="select-class" id="select-class">
+                                <option value="All Classes">All Classes</option>
+                            </select>
+                        </div>
+                        <div class="card-detail1 small-mid-font">
+                            <div>300 Students</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-options">
+                    <div class="views"><img src="icons/preview.svg" alt="preview"></div>
+                    <div class="calendar opacity-40"><img src="icons/manage course.svg" alt="calendar"></div>
+                    <div class="grade-icon opacity-40"><img src="icons/grade submissions.svg" alt="grade submissions"></div>
+                    <div class="reports"><img src="icons/reports.svg" alt="reports"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="star"><img src="icons/favourite.svg" alt="favicon"></div>
+                <div class="expired">EXPIRED</div>
+
+
+                <div class="card-main">
+                    <div class="card-img">
+                        <img src="images/imageMask-3.svg" alt="">
+                    </div>
+                    <div class="card-details">
+                        <p class="card-title">Introduction to High School Mathematics</p>
+                        <div class="card-detail1 small-mid-font">
+                            <div class="subject">Mathematics</div> <div class="seperator"></div> <div class="grade">Grade 8 <span class="grade-green">+3</span></div> 
+                        </div>
+                        <div class="select-class">
+                            <select name="select-class" id="select-class">
+                                <option value="Mr Frank's Class A">Mr Frank's Class A</option>
+                            </select>
+                        </div>
+                        <div class="card-detail1 small-mid-font">
+                            <div>44 Students</div> <div class="seperator"></div> <div>14-Oct-2019 - 20-Oct-2020</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-options">
+                    <div class="views"><img src="icons/preview.svg" alt="preview"></div>
+                    <div class="calendar"><img src="icons/manage course.svg" alt="calendar"></div>
+                    <div class="grade-icon"><img src="icons/grade submissions.svg" alt="grade submissions"></div>
+                    <div class="reports"><img src="icons/reports.svg" alt="reports"></div>
+                </div>
+            </div>
+            
+        </div>
+         </div>
+
+         <div class="contacts">About <div class="seperator"></div> Contact Us</div>
+    </main>
+
+    <footer>
+        <img src="icons/logo used in footer.svg" alt="">
+        <div class="seperator"></div>
+        <p>Copyright &copy; 2020-2021 <span>Zeus System Pvt. Ltd. All rights reserved.</span></p>
+    </footer>
+    <script src="dashboard.js"></script>
+</body>
+</html>
