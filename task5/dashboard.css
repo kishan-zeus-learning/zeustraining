@@ -161,6 +161,10 @@ main{
     right: 16px;
 }
 
+.gray-icon{
+    filter: grayscale(100%);
+}
+
 .card>.expired{
     display: inline;
     position: absolute;
@@ -187,7 +191,7 @@ main{
     padding-right: 24px;
     margin-left: 24px;
     margin-right: 24px;
-    margin-bottom: 9px;
+    /* margin-bottom: 9px; */
     border-top: 1px gray solid;
 }
 
