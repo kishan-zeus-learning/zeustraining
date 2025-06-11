@@ -1,0 +1,5 @@
+.contacts{
+    @include flexCenter;
+    gap: 15px;
+    color: $textColor3;
+}

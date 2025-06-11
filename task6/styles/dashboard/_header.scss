@@ -1,0 +1,81 @@
+header{
+    background-image: url("../../header\ pattern\ svg.svg");
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: $textColor1;
+    font-size: 14px;
+    width: 100%;
+    position: sticky;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: 2;
+    top:0;
+
+
+    >img{
+        margin-left: 25px;
+    }
+
+    .header-nav{
+        display: flex;
+        gap: 30px;
+        margin-right: 15px;
+
+        >div{
+            @include flexCenter;
+        }
+
+        div:nth-child(1){
+            color: white;
+            border-bottom: 2px white solid;
+        }
+
+        .alerts, .announcements, .account{
+            position: relative;
+
+            >span{
+                position:absolute;
+                top:2px;
+                right: -3px;
+                font-size: 8px;
+                background-color: blue;
+                border-radius: 100%;
+                color: white;
+                padding: 3px 6px;
+            }
+        }
+
+        .account{
+            >span{
+                background-color: white;
+                color: black;
+            }
+        }
+
+        .hide{
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+        .nav-btn{
+            display: none;
+            
+            @media screen and (max-width: 768px){
+                @include flexCenter;
+                padding-bottom: 5px;
+                padding-top: 0px;
+                height: 100%;
+            }
+
+            // &:hover{
+            //     background-color: wheat;
+            //     .sidebar{
+            //         display: block;
+            //     }
+            // }
+        }
+
+    }
+
+}

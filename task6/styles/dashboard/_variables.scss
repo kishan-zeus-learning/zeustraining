@@ -1,0 +1,24 @@
+$backgroundColor1: #EEEEEE;
+$backgroundColor2: #8DDC97;
+$backgroundColor3: #E0E1E1;
+
+$textColor1: #37A073;
+$textColor2: #666666;
+$textColor3: #1F7A54;
+
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin smallMidFont{
+    font-size: 12px;
+    font-family: "quicksand-medium";
+    color: $textColor2;
+}
+
+@mixin numFont{
+    font-size: 24px;
+    font-family: "quicksand-bold";
+}
