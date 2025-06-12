@@ -1,6 +1,5 @@
-const navbtn=document.querySelector('.nav-btn');
-const navbar=document.querySelector('.sidebar');
 const articles=document.querySelector('.articles');
+
 
 function cardComponent({
     expired,
@@ -147,13 +146,3 @@ const cardData = [
 
 
 articles.innerHTML= cardData.map(cardComponent).join(' ');
-
-navbtn.addEventListener("mouseover",(event)=>{
-    if(navbar.style.display=="none"){
-        navbar.style.display="block";
-        // articles.style.display="none";
-    }else{
-        navbar.style.display="none";
-        // articles.style.display="block";
-    }
-});

@@ -89,6 +89,7 @@ form{
     display: flex;
     gap: 50px;
     /* font-family: "quicksand-medium"; */
+    margin-bottom: 23px;
 }
 
 .school-radio p{

@@ -26,17 +26,26 @@ header{
             @include flexCenter;
         }
 
-        div:nth-child(1){
+        >div:nth-child(1){
             color: white;
             border-bottom: 2px white solid;
         }
 
         .alerts, .announcements, .account{
             position: relative;
+            height: 100%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            cursor: pointer;
+            &:hover{
+                >img{
+                    filter: brightness(0) saturate(100%) invert(1);
+                }
+            }
 
             >span{
                 position:absolute;
-                top:2px;
+                top:5px;
                 right: -3px;
                 font-size: 8px;
                 background-color: blue;
@@ -66,6 +75,11 @@ header{
                 padding-bottom: 5px;
                 padding-top: 0px;
                 height: 100%;
+                cursor: pointer;
+
+                &:hover{
+                    filter: brightness(0) saturate(100%) invert(1);
+                }
             }
 
             // &:hover{
