@@ -18,6 +18,10 @@
             font-family: "quicksand-medium";
             font-size: 16px;
             background-color: inherit;
+            appearance: none;
+            background-image: url("../../icons/arrow-down.svg");
+            background-repeat: no-repeat;
+            background-position: right 0px center;
         }
 
         .back-btn{

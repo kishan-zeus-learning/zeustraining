@@ -38,7 +38,7 @@ function cardComponent({
                         </div>
                             `:""}
 
-                        <div class="select-class">
+                        <div class="select-class ${classes?.length>0?"":"gray-font"}">
                             <select name="select-class" id="select-class">
                                 ${classes?.length>0?classes.map(cls=>`<option value="${cls}">${cls}</option>`).join(' '):`<option value="" disabled selected>No Classes</option>`}
                             </select>

@@ -88,6 +88,19 @@
                     border: none;
                     width: 100%;
                     border-bottom: 1px gray solid;
+
+                    appearance: none;
+                    background-image: url("../../icons/arrow-down.svg");
+                    background-repeat: no-repeat;
+                    background-position: right 0px center;
+
+                    
+                }
+            }
+
+            .gray-font{
+                select{
+                    opacity: 40%;
                 }
             }
         }

@@ -10,8 +10,11 @@ let navitem=false;
 function showNav(){
   if(hamburger || navitem){
     navbar.classList.add('show');
+    navbtn.style.filter="brightness(0) saturate(100%) invert(1)";
+
   }else{
     navbar.classList.remove('show');
+    navbtn.style.filter="";
   }
 }
 
