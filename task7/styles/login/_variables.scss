@@ -1,0 +1,23 @@
+$textColor1: #222222;
+$textColor2: #666666;
+$textColor3: #1F7A54;
+$textColor4: #1F2834;
+
+$backgroundColor1: #EEEEEE;
+$backgroundColor2: #FFFFFF;
+
+$headerBackground: #25313F;
+$footerBackground: #E0E1E1;
+$loginBackground: #3FD28B;
+
+$formBorder: #3AC7EC;
+
+$headerBorder: #31B9E4;
+
+$dropdownBorder: #E7E7E7;
+
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

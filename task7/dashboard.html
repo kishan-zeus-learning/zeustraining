@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/dashboard/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="icons/logo used in header.svg" alt="">
+        <div class="header-nav">
+            <div class="nav-option hide">DASHBOARD</div>
+            <div class="nav-option hide">CONTENT</div>
+            <div class="nav-option hide">USERS</div>
+            <div class="nav-option hide">REPORTS</div>
+            <div class="nav-option hide">ADMIN</div>
+            <div class="alerts">
+                <img src="icons/alerts.svg" alt="alerts"> <span>2</span>
+                <div class="alerts-content-wrapper">
+                    <div class="alerts-content"></div>
+                    <div class="show-all"><a href="#">SHOW ALL</a></div>
+                </div>
+            </div>
+            <div class="announcements">
+                <img src="icons/announcements.svg" alt="announcements"><span>1</span>
+                <div class="announcements-content-wrapper">
+                    <div class="announcements-content"></div>
+                    <div class="show-all"><a href="#">SHOW ALL</a> <div class="seperator2"></div><a href="#">CREATE NEW</a></div>
+                </div>
+            </div>
+            <div class="account"><img src="icons/account_circle.svg" alt="account"><span>T</span></div>
+            <div class="nav-btn"><img src="icons/hamburger-menu.svg" alt=""></div>
+        </div>
+    </header>
+
+
+    <aside class="sidebar">
+        <div class="nav-item">
+            <a href="#">DASHBOARD</a>
+        </div>
+        <div class="nav-item has-submenu">
+            <a href="#">CONTENT</a>
+            <div class="arrow"><img src="./icons/icons8-arrow-50.png" alt=""></div>
+            <div class="sub-items">
+                <div class="sub-item">
+                    <a href="">COURSE CATALOG</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-item has-submenu">
+            <a href="">USERS</a>
+            <div class="arrow"><img src="./icons/icons8-arrow-50.png" alt=""></div>
+            <div class="sub-items">
+                <div class="sub-item">
+                    <a href="">@KISHAN</a>
+                </div>
+                <div class="sub-item">
+                    <a href="">@MONU</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-item has-submenu">
+            <a href="">REPORTS</a>
+            <div class="arrow"><img src="./icons/icons8-arrow-50.png" alt=""></div>
+            <div class="sub-items">
+                <div class="sub-item">
+                    <a href="">REPORT BUG</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-item has-submenu">
+            <a href="">ADMIN</a>
+            <div class="arrow"><img src="./icons/icons8-arrow-50.png" alt=""></div>
+            <div class="sub-items">
+                <div class="sub-item">
+                    <a href="">ADD USER</a>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+
+    <main>
+        <div class="overview">
+            <div class="courses"><img src="icons/courses.svg" alt="courses"> <span class="num">4</span>
+                <span>Courses</span></div>
+            <div class="classes"><img src="icons/classes.svg" alt="classes"> <span class="num">4</span>
+                <span>Classes</span></div>
+        </div>
+
+        <div class="results">
+            <div class="showing-result">
+                <span class="small-mid-font">Showing 4 of 4 courses </span>
+            </div>
+            <div class="sort-result">
+                <span class="small-mid-font">Sort By:</span>
+                <select name="sortby" id="sortby">
+                    <option value="Course Name">Course Name</option>
+                </select>
+                <span class="back-btn"><img src="icons/sort.svg" alt="sort"></span>
+            </div>
+        </div>
+        <div class="articles-wrapper">
+
+
+            <div class="articles" id="card-container">
+                
+
+            </div>
+        </div>
+
+        <div class="contacts">About <div class="seperator"></div> Contact Us</div>
+    </main>
+
+    <footer>
+        <img src="icons/logo used in footer.svg" alt="">
+        <div class="seperator"></div>
+        <p>Copyright &copy; 2020-2021 <span>Zeus System Pvt. Ltd. All rights reserved.</span></p>
+    </footer>
+    <script src="js/dashboard.js"></script>
+    <script src="js/dashboardNav.js"></script>
+    <script src="js/dashboardAlerts.js"></script>
+    <script src="js/dashboardAnnouncements.js"></script>
+</body>
+
+</html>

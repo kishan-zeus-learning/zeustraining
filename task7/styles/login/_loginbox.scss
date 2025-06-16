@@ -1,0 +1,167 @@
+.login-box{
+    background-color: $backgroundColor2;
+    width: 488px;
+    padding: 20px;
+    border-top: 3px $formBorder solid;
+
+    .login-title{
+        @include flexCenter;
+        position: relative;
+        font-size: 20px;
+        font-family: "quicksand-medium";
+
+        .back-icon{
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    form {
+        margin-top: 34px;
+        
+
+        .school-radio{
+            display: flex;
+            gap: 50px;
+            margin-bottom: 23px;
+
+            .school-radio-btn{
+                display: flex;
+                gap: 10px;
+                
+                input[type="radio"]{
+                    accent-color: green;
+                    height: 20px;
+                    width: 20px;
+                }
+                
+                p{
+                font-family: "quicksand-medium";
+                }
+            }
+
+        }
+
+        .dropdown{
+            margin-bottom: 36px;
+
+            label{
+                font-size: 12px;
+                color: $textColor2;
+                font-family: "quicksand";
+            }
+
+            select{
+            border: none;
+            appearance: none;
+            border-bottom: 1px solid $dropdownBorder;
+            width: 100%;
+            font-family: 'quicksand-medium';
+            font-size: 16px;
+            margin-top: 5px;
+            /* margin-bottom: 10px; */
+            background-image: url('../../icons/arrow-down.svg');
+            background-repeat: no-repeat;
+            background-position: right ;
+            padding-bottom: 5px;
+
+            }
+        }
+
+        .username{
+            width: 100%;
+            text-align: right;
+            margin-top: 56px;
+
+            input{
+                border: none;
+                padding-bottom: 5px;
+                font-family: "quicksand-medium";
+                border-bottom: 1px solid $dropdownBorder;
+                width: 100%;
+                font-size: 16px;
+            }
+            a{
+                border: none;
+                color: $textColor3;
+                font-family: "quicksand";
+            }
+        }
+
+        .password{
+            margin-top: 33px;
+
+            .password-wrapper{
+                width: 100%;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                input{
+                    width: 100%;
+                    border: none;
+                    font-family: "quicksand-medium";
+                    font-size: 16px;
+                    padding-right :40px;
+                    padding-bottom: 5px;
+                    padding-top: 5px;
+                    border-bottom: 1px solid $dropdownBorder;
+                    padding-left: 5px;
+                }
+
+                .preview-icon{
+                    position: absolute;
+                    right: 5px;
+                    bottom: 5px;
+                }
+            }
+
+            .forgot-password-wrapper{
+                width: 100%;
+                text-align: right;
+
+                a{
+                    font-family: "quicksand";
+                    color:$textColor3;
+                }
+            }
+        }
+
+        .rememberme{
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+
+            gap:3px;
+
+            input[type="checkbox"]{
+                accent-color: $textColor3;
+
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+        .submit-btn{
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+
+            button{
+                width: 200px;
+                height: 40px;
+                background-color: $loginBackground;
+                border: none;
+            }
+        }
+
+
+
+        
+        
+
+    }
+
+}

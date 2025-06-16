@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "quicksand-medium";
+}
+
+body{
+    background-color: $backgroundColor1;
+}
+
+main{
+    width: calc(100% - 48px);
+    margin: 24px;
+}
+
+.seperator{
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: black;
+}
+

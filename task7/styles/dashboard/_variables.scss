@@ -1,0 +1,39 @@
+$backgroundColor1: #EEEEEE;
+$backgroundColor2: #8DDC97;
+$backgroundColor3: #E0E1E1;
+$backgroundColor4: #FFFFEE;
+
+$backgroundNav: #F3F3F3;
+
+$textColor1: #37A073;
+$textColor2: #666666;
+$textColor3: #1F7A54;
+$textColor4: #222222;
+$textColor5: #6E6E6E;
+
+$borderColor:#2222221F;
+
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin smallMidFont{
+    font-size: 12px;
+    font-family: "quicksand-medium";
+    color: $textColor2;
+}
+
+@mixin numFont{
+    font-size: 24px;
+    font-family: "quicksand-bold";
+}
+
+@mixin line-clamp($lines) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+}

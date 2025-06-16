@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "quicksand";
+  src: url("../../fonts/static/Quicksand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "quicksand-semibold";
+  src: url("../../fonts/static/Quicksand-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "quicksand-medium";
+  src: url("../../fonts/static/Quicksand-Medium.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "quicksand";
+}
+
+body {
+  background-color: #EEEEEE;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+header {
+  background-image: url("../../header pattern image.png");
+  background-color: #25313F;
+  border-bottom: 2px #31B9E4 solid;
+  padding-left: 10px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  padding: 5px 0px;
+  padding-left: 10px;
+}
+
+.login-box {
+  background-color: #FFFFFF;
+  width: 488px;
+  padding: 20px;
+  border-top: 3px #3AC7EC solid;
+}
+.login-box .login-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 20px;
+  font-family: "quicksand-medium";
+}
+.login-box .login-title .back-icon {
+  position: absolute;
+  left: 0;
+}
+.login-box form {
+  margin-top: 34px;
+}
+.login-box form .school-radio {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 23px;
+}
+.login-box form .school-radio .school-radio-btn {
+  display: flex;
+  gap: 10px;
+}
+.login-box form .school-radio .school-radio-btn input[type=radio] {
+  accent-color: green;
+  height: 20px;
+  width: 20px;
+}
+.login-box form .school-radio .school-radio-btn p {
+  font-family: "quicksand-medium";
+}
+.login-box form .dropdown {
+  margin-bottom: 36px;
+}
+.login-box form .dropdown label {
+  font-size: 12px;
+  color: #666666;
+  font-family: "quicksand";
+}
+.login-box form .dropdown select {
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-bottom: 1px solid #E7E7E7;
+  width: 100%;
+  font-family: "quicksand-medium";
+  font-size: 16px;
+  margin-top: 5px;
+  /* margin-bottom: 10px; */
+  background-image: url("../../icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-bottom: 5px;
+}
+.login-box form .username {
+  width: 100%;
+  text-align: right;
+  margin-top: 56px;
+}
+.login-box form .username input {
+  border: none;
+  padding-bottom: 5px;
+  font-family: "quicksand-medium";
+  border-bottom: 1px solid #E7E7E7;
+  width: 100%;
+  font-size: 16px;
+}
+.login-box form .username a {
+  border: none;
+  color: #1F7A54;
+  font-family: "quicksand";
+}
+.login-box form .password {
+  margin-top: 33px;
+}
+.login-box form .password .password-wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-box form .password .password-wrapper input {
+  width: 100%;
+  border: none;
+  font-family: "quicksand-medium";
+  font-size: 16px;
+  padding-right: 40px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-bottom: 1px solid #E7E7E7;
+  padding-left: 5px;
+}
+.login-box form .password .password-wrapper .preview-icon {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+.login-box form .password .forgot-password-wrapper {
+  width: 100%;
+  text-align: right;
+}
+.login-box form .password .forgot-password-wrapper a {
+  font-family: "quicksand";
+  color: #1F7A54;
+}
+.login-box form .rememberme {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 3px;
+}
+.login-box form .rememberme input[type=checkbox] {
+  accent-color: #1F7A54;
+  width: 15px;
+  height: 15px;
+}
+.login-box form .submit-btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+.login-box form .submit-btn button {
+  width: 200px;
+  height: 40px;
+  background-color: #3FD28B;
+  border: none;
+}
+
+.seperator {
+  width: 1px;
+  border: 1px gainsboro solid;
+  height: 18px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: #1F7A54;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
+  padding: 5px;
+  background-color: #E0E1E1;
+}/*# sourceMappingURL=style.css.map */

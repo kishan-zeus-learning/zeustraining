@@ -1,0 +1,7 @@
+footer{
+    @include flexCenter;
+    gap: 20px;
+    font-size: 12px;
+    padding: 5px;
+    background-color: $backgroundColor3;
+}

@@ -1,0 +1,25 @@
+.overview{
+    display: flex;
+    height: 64px;
+    background-color: $backgroundColor2;
+
+    >div{
+        width: 50%;
+        @include flexCenter;
+        gap:10px;
+    }
+
+    .courses{
+        border-bottom: 3px black solid;
+
+        .num{
+            @include numFont;
+        }
+    }
+
+    .classes{
+        .num{
+            @include numFont;
+        }
+    }
+}
