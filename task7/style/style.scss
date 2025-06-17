@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding: 0;
+    // box-sizing: border-box;
+}
+
+
+body{
+    margin:0;
+    padding:0;
+    touch-action: none;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    // gap:10px;
+    // row-gap: 10px;
+    column-gap: 10px;
+    .parent-div{
+        background-color: beige;
+        position: relative;
+        width: calc(50vw - 10px);
+        height: calc(50vh - 10px);
+        touch-action: none;
+        .child-div{
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            touch-action: none;
+            
+            &:active{
+                cursor: grabbing;
+            }
+        }
+    }
+}

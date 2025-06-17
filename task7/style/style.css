@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  touch-action: none;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+body .parent-div {
+  background-color: beige;
+  position: relative;
+  width: calc(50vw - 10px);
+  height: calc(50vh - 10px);
+  touch-action: none;
+}
+body .parent-div .child-div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  touch-action: none;
+}
+body .parent-div .child-div:active {
+  cursor: grabbing;
+}/*# sourceMappingURL=style.css.map */
