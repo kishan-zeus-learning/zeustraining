@@ -4,13 +4,17 @@
     width: 100%;
     .articles{
         margin-top: 17px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 25px 24px;
+        max-width: 1000px;
+        @include flexCenter;
+        // grid-template-columns: 1fr 1fr;
+        // grid-gap: 25px 24px;
+        gap: 24px;
+        // flex-basis: content;
+        flex-wrap: wrap;
         
-        @media screen and (max-width: 975px) {
-            grid-template-columns: 1fr;
-        }
+        // @media screen and (max-width: 975px) {
+        //     grid-template-columns: 1fr;
+        // }
     
     }
 }

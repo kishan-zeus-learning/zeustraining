@@ -1,6 +1,9 @@
 header{
-    background-image: url("../../header\ pattern\ svg.svg");
-    background-color: black;
+    background: url("../../header\ pattern\ svg.svg") #25313F;
+    background-repeat: repeat;
+    background-blend-mode: overlay;
+
+    // background-color: black;
     display: flex;
     justify-content: space-between;
     color: $textColor1;

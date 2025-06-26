@@ -29,11 +29,8 @@ $borderColor:#2222221F;
     font-size: 24px;
     font-family: "quicksand-bold";
 }
-
-@mixin line-clamp($lines) {
-  display: -webkit-box;
-  -webkit-line-clamp: $lines;
-  -webkit-box-orient: vertical;
+@mixin line-clamp($lines, $line-height: 1.5em) {
+  line-height: $line-height;
+  max-height: calc(#{$lines} * #{$line-height});
   overflow: hidden;
-
 }

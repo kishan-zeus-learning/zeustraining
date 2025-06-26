@@ -37,8 +37,9 @@ main {
 }
 
 header {
-  background-image: url("../../header pattern svg.svg");
-  background-color: black;
+  background: url("../../header pattern svg.svg") #25313F;
+  background-repeat: repeat;
+  background-blend-mode: overlay;
   display: flex;
   justify-content: space-between;
   color: #37A073;
@@ -152,9 +153,8 @@ header .header-nav .nav-btn {
 .alerts-content-wrapper .alerts-content .alert-component .content {
   font-size: 14px;
   padding-right: 22px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  line-height: 1.5em;
+  max-height: calc(2 * 1.5em);
   overflow: hidden;
 }
 .alerts-content-wrapper .alerts-content .alert-component .sub-content {
@@ -235,9 +235,8 @@ header .header-nav .nav-btn {
 .announcements-content-wrapper .announcements-content .announcement-component .content {
   font-size: 14px;
   padding-right: 22px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  line-height: 1.5em;
+  max-height: calc(2 * 1.5em);
   overflow: hidden;
   margin-top: 8px;
 }
@@ -427,14 +426,12 @@ header .header-nav .nav-btn {
 }
 .articles-wrapper .articles {
   margin-top: 17px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 25px 24px;
-}
-@media screen and (max-width: 975px) {
-  .articles-wrapper .articles {
-    grid-template-columns: 1fr;
-  }
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .card {
